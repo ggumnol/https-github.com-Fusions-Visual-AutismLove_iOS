@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VASAGrantRequestListViewController" customModule="AutismLove" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewGrantRequestButton" destination="Hhw-Ao-Lqr" id="WKj-8m-pSI"/>
+                <outlet property="containerView" destination="9MM-o2-hwf" id="6Jk-cZ-Q8A"/>
+                <outlet property="downloadButton" destination="mPb-1F-nDY" id="rOq-Q8-7Uj"/>
+                <outlet property="grantsRequestListLabel" destination="V2x-ev-HMS" id="Pia-zn-ZCI"/>
+                <outlet property="loadMoreIndicator" destination="3Zi-d6-IZO" id="BHc-G2-U1M"/>
+                <outlet property="tableView" destination="qUw-xG-dMu" id="vRl-6f-FWt"/>
+                <outlet property="usernameLabel" destination="E07-Qw-zUL" id="Qr6-qX-Qy2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grants Request List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2x-ev-HMS">
+                    <rect key="frame" x="24" y="60" width="366" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MM-o2-hwf">
+                    <rect key="frame" x="0.0" y="105" width="414" height="757"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qUw-xG-dMu">
+                            <rect key="frame" x="0.0" y="62" width="414" height="613"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" id="3Zi-d6-IZO">
+                                <rect key="frame" x="0.0" y="828.00000104037201" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </tableView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eXD-9J-nbg">
+                            <rect key="frame" x="24" y="16" width="366" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E07-Qw-zUL">
+                                    <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPb-1F-nDY" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="216" y="0.0" width="150" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="MTB-kv-RqW"/>
+                                    </constraints>
+                                    <state key="normal" title="Download"/>
+                                    <connections>
+                                        <action selector="downloadTapped:" destination="-1" eventType="touchUpInside" id="Hbb-iU-PzE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHR-ay-KS6">
+                            <rect key="frame" x="0.0" y="675" width="414" height="82"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-Ao-Lqr" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="16" width="366" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="AaR-qM-29R"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="addNewGrantRequestTapped:" destination="-1" eventType="touchUpInside" id="SdO-vn-rf0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Hhw-Ao-Lqr" firstAttribute="top" secondItem="DHR-ay-KS6" secondAttribute="top" constant="16" id="F1d-Zn-7NU"/>
+                                <constraint firstAttribute="bottom" secondItem="Hhw-Ao-Lqr" secondAttribute="bottom" constant="16" id="J3C-du-vls"/>
+                                <constraint firstAttribute="trailing" secondItem="Hhw-Ao-Lqr" secondAttribute="trailing" constant="24" id="m45-er-baj"/>
+                                <constraint firstItem="Hhw-Ao-Lqr" firstAttribute="leading" secondItem="DHR-ay-KS6" secondAttribute="leading" constant="24" id="qmD-oX-DmT"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" id="uah-We-QEM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DHR-ay-KS6" firstAttribute="top" secondItem="qUw-xG-dMu" secondAttribute="bottom" id="1ti-Q9-MGu"/>
+                        <constraint firstItem="eXD-9J-nbg" firstAttribute="top" secondItem="9MM-o2-hwf" secondAttribute="top" constant="16" id="3ev-LN-IrF"/>
+                        <constraint firstItem="eXD-9J-nbg" firstAttribute="leading" secondItem="9MM-o2-hwf" secondAttribute="leading" constant="24" id="4EC-L4-4Nu"/>
+                        <constraint firstAttribute="trailing" secondItem="qUw-xG-dMu" secondAttribute="trailing" id="IFR-6z-PB9"/>
+                        <constraint firstAttribute="trailing" secondItem="DHR-ay-KS6" secondAttribute="trailing" id="J4V-d1-wCR"/>
+                        <constraint firstAttribute="trailing" secondItem="eXD-9J-nbg" secondAttribute="trailing" constant="24" id="MHD-ep-iA9"/>
+                        <constraint firstItem="qUw-xG-dMu" firstAttribute="leading" secondItem="9MM-o2-hwf" secondAttribute="leading" id="aQ1-AO-Tpk"/>
+                        <constraint firstAttribute="bottom" secondItem="DHR-ay-KS6" secondAttribute="bottom" id="i74-nE-IWp"/>
+                        <constraint firstItem="qUw-xG-dMu" firstAttribute="top" secondItem="eXD-9J-nbg" secondAttribute="bottom" constant="16" id="lxW-Xw-gA1"/>
+                        <constraint firstItem="DHR-ay-KS6" firstAttribute="leading" secondItem="9MM-o2-hwf" secondAttribute="leading" id="ulI-XE-vv4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9MM-o2-hwf" secondAttribute="trailing" id="8Br-4l-K4J"/>
+                <constraint firstItem="V2x-ev-HMS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="8ph-CB-HES"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V2x-ev-HMS" secondAttribute="trailing" constant="24" id="CP0-7w-v9F"/>
+                <constraint firstItem="V2x-ev-HMS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="EJK-4A-onV"/>
+                <constraint firstItem="9MM-o2-hwf" firstAttribute="top" secondItem="V2x-ev-HMS" secondAttribute="bottom" constant="16" id="EPj-w3-RKn"/>
+                <constraint firstItem="9MM-o2-hwf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UBB-mS-SyL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9MM-o2-hwf" secondAttribute="bottom" id="whO-PO-EcK"/>
+            </constraints>
+            <point key="canvasLocation" x="13.043478260869566" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

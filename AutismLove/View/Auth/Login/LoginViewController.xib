@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="AutismLove" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBoxButton" destination="yyc-Aj-sxc" id="Pdc-pC-2u2"/>
+                <outlet property="checkBoxView" destination="Psg-9b-lVj" id="uCA-iG-StR"/>
+                <outlet property="idTextField" destination="dBL-l6-Stb" id="UKf-Iu-Vgw"/>
+                <outlet property="loginButton" destination="bpe-Rp-YiQ" id="NX3-O6-8tS"/>
+                <outlet property="logoImageView" destination="95e-Fn-ukv" id="GTP-Tx-m6X"/>
+                <outlet property="logoToMasterStackConstraint" destination="6NN-VH-h3I" id="w1T-Y8-3N5"/>
+                <outlet property="masterStack" destination="Jk9-aR-A8f" id="dJw-gK-uMD"/>
+                <outlet property="passwordTextField" destination="bjI-jR-J9P" id="2lY-nU-aAY"/>
+                <outlet property="recoverIdButton" destination="I0h-jT-OEY" id="ag2-Ea-gTl"/>
+                <outlet property="replacePasswordButton" destination="rMx-fO-qgd" id="Qye-Ex-RsZ"/>
+                <outlet property="signUpButton" destination="DtE-1V-Yp1" id="0T9-rm-KBj"/>
+                <outlet property="verticalCenterContraint" destination="x0L-OU-YRM" id="Mcb-uw-ujA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jk9-aR-A8f">
+                    <rect key="frame" x="65" y="356.5" width="284" height="273"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-l6-Stb" customClass="CustomTextField" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="beJ-4c-VQS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="addDoneButton" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjI-jR-J9P" customClass="CustomTextField" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="66" width="284" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="K0R-RF-lY5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="addDoneButton" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jyP-i9-zgS">
+                            <rect key="frame" x="0.0" y="132" width="125" height="24"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psg-9b-lVj" customClass="M13Checkbox" customModule="M13Checkbox">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="GTB-NV-cdE"/>
+                                        <constraint firstAttribute="width" constant="24" id="H66-8V-Jc6"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyc-Aj-sxc" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="0.0" width="93" height="24"/>
+                                    <state key="normal" title="Remember ID"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-Rp-YiQ" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="172" width="284" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="l7e-bf-jFA"/>
+                            </constraints>
+                            <state key="normal" title="Login"/>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-4r-3fZ">
+                            <rect key="frame" x="0.0" y="243" width="284" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0h-jT-OEY" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                    <state key="normal" title="Recover ID"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="kXt-gd-LxN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-fO-qgd" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="91" y="0.0" width="125" height="30"/>
+                                    <state key="normal" title="Replace Password"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="hRL-VQ-Rd8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtE-1V-Yp1" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="232" y="0.0" width="52" height="30"/>
+                                    <state key="normal" title="Sign up"/>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="C7Q-og-8SM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dBL-l6-Stb" secondAttribute="trailing" id="AxL-Ni-Cyb"/>
+                        <constraint firstAttribute="trailing" secondItem="bjI-jR-J9P" secondAttribute="trailing" id="RVi-jl-Yso"/>
+                        <constraint firstAttribute="trailing" secondItem="bpe-Rp-YiQ" secondAttribute="trailing" id="Y4j-vh-VpT"/>
+                        <constraint firstItem="bpe-Rp-YiQ" firstAttribute="leading" secondItem="Jk9-aR-A8f" secondAttribute="leading" id="ZTk-ey-RJF"/>
+                        <constraint firstItem="bjI-jR-J9P" firstAttribute="leading" secondItem="Jk9-aR-A8f" secondAttribute="leading" id="uN3-Ss-EeP"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="95e-Fn-ukv">
+                    <rect key="frame" x="72" y="420" width="270" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="UC1-St-KmL"/>
+                        <constraint firstAttribute="width" constant="270" id="WgK-2a-bUO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jk9-aR-A8f" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="5cQ-jW-jkp"/>
+                <constraint firstItem="Jk9-aR-A8f" firstAttribute="top" secondItem="95e-Fn-ukv" secondAttribute="bottom" priority="750" constant="48" id="6NN-VH-h3I"/>
+                <constraint firstItem="Jk9-aR-A8f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C71-l0-hQa"/>
+                <constraint firstItem="95e-Fn-ukv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="I3P-od-AgM"/>
+                <constraint firstItem="Jk9-aR-A8f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="Sg0-95-rYg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jk9-aR-A8f" secondAttribute="bottom" constant="24" id="VsF-5y-wX4"/>
+                <constraint firstItem="Jk9-aR-A8f" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.1" id="Zfh-og-TDy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jk9-aR-A8f" secondAttribute="trailing" constant="24" id="g9j-vY-mrY"/>
+                <constraint firstItem="95e-Fn-ukv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="x0L-OU-YRM"/>
+            </constraints>
+            <point key="canvasLocation" x="79.710144927536234" y="116.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="270" height="56"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

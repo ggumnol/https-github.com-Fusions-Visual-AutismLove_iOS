@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TerminateAccountAlert" customModule="AutismLove" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="UAZ-1e-rfq" id="rPa-F5-FeO"/>
+                <outlet property="cancelButton" destination="yWR-mh-YBR" id="GIx-Hu-zIh"/>
+                <outlet property="closeButton" destination="PnO-jV-qxX" id="xHt-Sr-hng"/>
+                <outlet property="enterPasswordLabel" destination="2IR-QQ-kQ7" id="4r0-Jb-Y0r"/>
+                <outlet property="passwordField" destination="wQg-c1-V4m" id="ODj-Cq-vXK"/>
+                <outlet property="terminateAccountLabel" destination="X2O-zz-OwL" id="wiH-EF-TAd"/>
+                <outlet property="terminateButton" destination="Oj1-M1-x2u" id="s7B-VQ-CDu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="NfG-DI-icS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAZ-1e-rfq">
+                    <rect key="frame" x="32" y="313.5" width="350" height="269"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IR-QQ-kQ7">
+                            <rect key="frame" x="24" y="64" width="302" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnO-jV-qxX" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="278" y="12" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="GNU-DK-HyL"/>
+                                <constraint firstAttribute="height" constant="48" id="Ily-ce-UeH"/>
+                                <constraint firstAttribute="width" secondItem="PnO-jV-qxX" secondAttribute="height" multiplier="1:1" id="Y0z-Fl-mBk"/>
+                            </constraints>
+                            <state key="normal" image="xmark" catalog="system"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="aP5-9w-oHa"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminate the account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2O-zz-OwL">
+                            <rect key="frame" x="24" y="24" width="205.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQg-c1-V4m" customClass="CustomTextField" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="16" y="100.5" width="318" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="iEw-Sh-usE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="addDoneButton" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tuN-AZ-zri">
+                            <rect key="frame" x="82" y="179.5" width="186" height="65.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWR-mh-YBR" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="18" width="85" height="30"/>
+                                    <color key="backgroundColor" red="0.90700149536132812" green="0.69361716508865356" blue="0.048466458916664124" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="U01-TN-Eb1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj1-M1-x2u" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                                    <rect key="frame" x="101" y="17" width="85" height="32"/>
+                                    <color key="backgroundColor" red="0.81715539380000002" green="0.1414372854" blue="0.23499999939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="es3-jw-4Pt"/>
+                                    </constraints>
+                                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                    <state key="normal" title="Terminate"/>
+                                    <connections>
+                                        <action selector="confirmButtonTapped:" destination="-1" eventType="touchUpInside" id="6G9-av-9bc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="lMy-rC-WPv"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="X2O-zz-OwL" firstAttribute="top" secondItem="lMy-rC-WPv" secondAttribute="top" constant="24" id="01t-jz-AhB"/>
+                        <constraint firstItem="tuN-AZ-zri" firstAttribute="centerX" secondItem="lMy-rC-WPv" secondAttribute="centerX" id="1Zp-Ie-pMc"/>
+                        <constraint firstItem="PnO-jV-qxX" firstAttribute="centerY" secondItem="X2O-zz-OwL" secondAttribute="centerY" id="2en-Mf-gH5"/>
+                        <constraint firstAttribute="trailing" secondItem="2IR-QQ-kQ7" secondAttribute="trailing" constant="24" id="63i-ke-xcb"/>
+                        <constraint firstItem="2IR-QQ-kQ7" firstAttribute="top" secondItem="X2O-zz-OwL" secondAttribute="bottom" constant="16" id="6dF-dS-Zon"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tuN-AZ-zri" secondAttribute="trailing" constant="24" id="7FY-hW-3My"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="bottom" secondItem="tuN-AZ-zri" secondAttribute="bottom" constant="24" id="9cx-s8-6Im"/>
+                        <constraint firstItem="tuN-AZ-zri" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lMy-rC-WPv" secondAttribute="leading" constant="24" id="JXg-or-9ck"/>
+                        <constraint firstItem="tuN-AZ-zri" firstAttribute="top" secondItem="wQg-c1-V4m" secondAttribute="bottom" constant="24" id="RXa-1d-rTM"/>
+                        <constraint firstItem="wQg-c1-V4m" firstAttribute="top" secondItem="2IR-QQ-kQ7" secondAttribute="bottom" constant="16" id="T4M-zj-vxq"/>
+                        <constraint firstItem="X2O-zz-OwL" firstAttribute="leading" secondItem="lMy-rC-WPv" secondAttribute="leading" constant="24" id="WuQ-Vt-wcs"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="trailing" secondItem="PnO-jV-qxX" secondAttribute="trailing" constant="24" id="gf7-UR-vSe"/>
+                        <constraint firstItem="wQg-c1-V4m" firstAttribute="leading" secondItem="lMy-rC-WPv" secondAttribute="leading" constant="16" id="gvy-O4-Rnx"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="trailing" secondItem="wQg-c1-V4m" secondAttribute="trailing" constant="16" id="imf-75-rND"/>
+                        <constraint firstItem="2IR-QQ-kQ7" firstAttribute="leading" secondItem="UAZ-1e-rfq" secondAttribute="leading" constant="24" id="kTD-jr-efU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+            <constraints>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" priority="250" id="19G-hE-UOJ"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="PLP-xA-qMb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UAZ-1e-rfq" secondAttribute="trailing" constant="32" id="U4z-hA-vnZ"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="d6p-W3-ijn"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z39-WO-GB3"/>
+            </constraints>
+            <point key="canvasLocation" x="123.18840579710145" y="269.86607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

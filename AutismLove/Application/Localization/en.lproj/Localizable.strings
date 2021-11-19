@@ -1,0 +1,98 @@
+/* 
+  Localizable.strings
+  AutismLove
+
+  Created by Samuel Krisna on 29/04/21.
+  
+*/
+
+"My Trust Fund Property" = "내 신탁 기금 재산";
+// General
+"Confirm" = "확인";
+"Finish" = "끝";
+
+// Tab bar
+"Home" = "집";
+"Transaction" = "트랜잭션";
+"Grant Request" = "승인 요청";
+"Messaging" = "메시징";
+"My Page" = "나의 페이지";
+
+// Request Form
+"Grant Request Form";
+
+//// ErrorStrings
+//    Empty_Field = "Please fill all empty field"
+//    Password_Is_Not_The_Same = "Password is not the same"
+//    Email_Is_Not_Valid = "The email entered is not valid"
+//    Phone_Must_Between_Characters = "Phone Number must between 10 - 13 digits"
+//}
+//
+//struct LoginStrings {
+//    // Login
+//    Remember_Id = "Remember ID"
+//    Login = "Login"
+//    Recover_Id = "Recover ID"
+//    Replace_Password = "Replace Password"
+//    Sign_Up = "Sign Up"
+//    ID = "ID"
+//    Password = "Password"
+//}
+//
+//struct Verification {
+//    Verification_Subtitle_1 = "Enter the mobile number you entered when signing up"
+//    Mobile_Number_Placeholder = "Mobile Number"
+//    Send_Verification_Number = "Send Verification Number"
+//    Verification_Subtitle_2 = "Enter the verification code you received"
+//    Enter_Verification_Number = "Enter Verification Code"
+//    Confirm = Strings.Confirm
+//}
+//
+//struct RecoverIdString {
+//    // Recover ID
+//    Recover_Id_Title = LoginStrings.Recover_Id
+//    ID = LoginStrings.ID
+//    Your_ID_Is = "Your ID is "
+//    Return_To_Login = "Return To Login"
+//}
+//
+//struct ReplacePasswordString {
+//    // Replace Password
+//    Replace_Password_Title = LoginStrings.Replace_Password
+//    New_Password = "New Password"
+//    New_Password_Subtitle = "Enter New Password"
+//    Password = LoginStrings.Password
+//    Confirm_Password = "Confirm Password"
+//    Confirm_Return_To_Login = "Confirm & Return To Login"
+//}
+//
+//struct SignUpString {
+//    // Sign Up Strings
+//    Sign_Up_Title = LoginStrings.Sign_Up
+//    Sign_Up_Subtitle = "Thank you for visiting our trust fund and decision making support center. Please click on the type of user you want to signup as"
+//    User = "User"
+//    Volunteer = "Volunteer"
+//    Support_Agency = "Support Agency"
+//
+//    Sign_Up_Agreements_Alert = "Please agree on the user agreements"
+//    Sign_Up_Agree_all = "Agree All"
+//    Required_Agreement = "Required Agreement"
+//    User_Sign_Up_Agreement = "User signup agreement"
+//    Private_Data_Collection_Agreement = "Private data collection agreement"
+//    Optional_Agreements = "Optional Agreements"
+//    Notification_Push_Agreement = "Notification push agreement"
+//
+//    ID = LoginStrings.ID
+//    Password = LoginStrings.Password
+//    Password_Confirm = ReplacePasswordString.Confirm_Password
+//    Next = "Next"
+//    Verify = "Verify"
+//    Input_User_Information = "Input user information"
+//    Input_Volunteer_Information = "Input volunteer information"
+//    Input_Support_Agent_Information = "Input support agent information"
+//    Name = "Name"
+//    Birthdate = "Birthdate"
+//    Birthdate_Placeholder = "yyyy/mm/dd"
+//    Contact_Number = "Contact Number"
+//    Job_Title = "Job Title"
+//    Finish = Strings.Finish

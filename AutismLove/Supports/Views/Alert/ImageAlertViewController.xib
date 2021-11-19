@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageAlertViewController" customModule="AutismLove" customModuleProvider="target">
+            <connections>
+                <outlet property="alertDescriptionLabel" destination="2IR-QQ-kQ7" id="Ck0-wC-aT5"/>
+                <outlet property="alertImageView" destination="q1r-AW-keO" id="FA1-qj-TDB"/>
+                <outlet property="backgroundView" destination="UAZ-1e-rfq" id="eI2-XM-p9f"/>
+                <outlet property="confirmButton" destination="Oj1-M1-x2u" id="67v-Vj-blA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="NfG-DI-icS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAZ-1e-rfq">
+                    <rect key="frame" x="119.5" y="346" width="175.5" height="204.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert" translatesAutoresizingMaskIntoConstraints="NO" id="q1r-AW-keO">
+                            <rect key="frame" x="71.5" y="24" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="BNE-Qg-bS4"/>
+                                <constraint firstAttribute="width" secondItem="q1r-AW-keO" secondAttribute="height" multiplier="1:1" id="PXa-sh-BgC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IR-QQ-kQ7">
+                            <rect key="frame" x="33" y="84" width="109.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oj1-M1-x2u" customClass="DefaultButton" customModule="AutismLove" customModuleProvider="target">
+                            <rect key="frame" x="24" y="128.5" width="127.5" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="es3-jw-4Pt"/>
+                            </constraints>
+                            <state key="normal" title="Confirm"/>
+                            <connections>
+                                <action selector="confirmButtonTapped:" destination="-1" eventType="touchUpInside" id="gk0-ch-zMx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="lMy-rC-WPv"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2IR-QQ-kQ7" secondAttribute="trailing" constant="33" id="63i-ke-xcb"/>
+                        <constraint firstItem="q1r-AW-keO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lMy-rC-WPv" secondAttribute="leading" constant="24" id="NcE-uy-2x8"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="bottom" secondItem="Oj1-M1-x2u" secondAttribute="bottom" constant="28" id="P9F-We-CYn"/>
+                        <constraint firstItem="q1r-AW-keO" firstAttribute="centerX" secondItem="UAZ-1e-rfq" secondAttribute="centerX" id="PF1-aq-he2"/>
+                        <constraint firstItem="2IR-QQ-kQ7" firstAttribute="top" secondItem="q1r-AW-keO" secondAttribute="bottom" constant="28" id="YtF-dd-aGf"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="trailing" secondItem="Oj1-M1-x2u" secondAttribute="trailing" constant="24" id="bMS-BN-BXE"/>
+                        <constraint firstItem="Oj1-M1-x2u" firstAttribute="top" secondItem="2IR-QQ-kQ7" secondAttribute="bottom" constant="24" id="hec-el-Puc"/>
+                        <constraint firstItem="2IR-QQ-kQ7" firstAttribute="leading" secondItem="UAZ-1e-rfq" secondAttribute="leading" constant="33" id="kTD-jr-efU"/>
+                        <constraint firstItem="q1r-AW-keO" firstAttribute="top" secondItem="lMy-rC-WPv" secondAttribute="top" constant="24" id="mi0-Pm-kOe"/>
+                        <constraint firstItem="Oj1-M1-x2u" firstAttribute="leading" secondItem="lMy-rC-WPv" secondAttribute="leading" constant="24" id="uOZ-Xa-jXt"/>
+                        <constraint firstItem="lMy-rC-WPv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q1r-AW-keO" secondAttribute="trailing" constant="24" id="uS6-iy-y2l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="cl_black_disabled"/>
+            <constraints>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" priority="250" id="19G-hE-UOJ"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="ARJ-Yv-TTS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UAZ-1e-rfq" secondAttribute="trailing" constant="24" id="HC7-lC-dX6"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="d6p-W3-ijn"/>
+                <constraint firstItem="UAZ-1e-rfq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z39-WO-GB3"/>
+            </constraints>
+            <point key="canvasLocation" x="123.18840579710145" y="270.20089285714283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_alert" width="26" height="26"/>
+        <namedColor name="cl_black_disabled">
+            <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="0.23999999463558197" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

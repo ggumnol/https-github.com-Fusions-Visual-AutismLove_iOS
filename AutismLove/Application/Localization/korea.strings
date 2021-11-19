@@ -1,0 +1,227 @@
+/* 
+ korea.strings
+ AutismLove
+ 
+ Created by Samuel Krisna on 04/05/21.
+ 
+ */
+
+// General
+"Authenticating" = "인증 중";
+"Confirm" = "확인";
+"Finish" = "완료";
+"Submit" = "완료";
+"Won" = "원";
+"Accept" = "동의";
+"Reject" = "비동의";
+"Edit" = "수정";
+"Download" = "거래내역 다운로드";
+"Download PDF" = "PDF 다운로드";
+"Cancel" = "취소";
+"Your Account Has Been Terminated" = "귀하의 계정이 해지되었습니다";
+"Must be equal to or longer than 6 letters" = "6자 이상이어야 합니다.";
+//"New" = "새로운";
+"Signup Completed" = "회원가입이 완료되었습니다";
+
+"ACCEPT" = "승인됨";
+"REJECT" = "거부";
+"MONEY_TRANSFERED" = "이체완료";
+"WAITING" = "대기 중";
+
+// Tab bar
+"Home" = "메인화면";
+"Transaction" = "거래내역 조회";
+"Grant Request" = "교부요청";
+"Messaging" = "채팅하기";
+"My Page" = "나의 정보";
+
+// Home
+"My Trust Fund Property" = "신탁재산";
+"Money I entrusted to the Korea Autism Society" = "내가 한국자폐인사랑협회에 맡긴 돈";
+
+"My User Information" = "나의 이용자 현황";
+
+// Grant Request Status
+"Waiting" = "동의 대기중";
+
+// Grant Request
+"Grant Request List" = "신탁재산 사용신청서 작성";
+"Edit Grant Request" = "교부 요청서 수정";
+"Users Grants Request List" = "신탁재산 교부요청 목록";
+"Grant Request Form" = "교부 요청서 작성";
+"I need more money than promised You can see the applications for the association." = "약속한 금액보다 돈이 더 필요해서 협회에 신청한 내용들을 볼 수 있어요";
+
+"Request reason :" = "신청 내용 :";
+"Usage :" = "사용한 곳 :";
+"Amount :" = "금액 :";
+"Grant date :" = "필요한 날짜 :";
+"Requester :" = "신청한 사람 :";
+"Status :" = "상태 :";
+
+"+ Add New Grant Request" = "+ 새 교부 요청 생성";
+"Download Request Lists" = "상세내역 PDF 다운로드";
+
+"Proof Completed" = "자료를 보냈어요";
+"Upload Proof" = "자료 보내기";
+
+"User proof attached" = "증빙완료";
+"User proof none" = "사진,영수증 보내기";
+
+// Grant Request Status
+"Confirmed" = "동의";
+"Reject" = "비동의";
+"Waiting for Confirmation" = "동의 대기중";
+
+// Grant Request Form
+"1. What is the reason for the request?" = "1. 신청 내용 (무엇을 하기 위해 필요한가요?)";
+"2. Where are you using it?" = "2. 사용할 곳은 어디인가요?";
+"3. Select grant date" = "3. 필요한 날짜를 선택 해주세요 (언제 받고 싶은가요?)";
+"4. Upload proof image" = "4. 영수증, 물건사진";
+"5. Requester" = "5. 교부 요청자";
+
+"Upload later" = "나중에 보내기";
+
+"Send to User" = "사용자 계정으로 보내기";
+"Send to Other" = "대신 보내주세요";
+"Send to Me" = "내 계좌로 받아요";
+
+"Recipient" = "사용처 명";
+"User Input" = "직접입력";
+"Bank Name" = "은행";
+"Account Number" = "계좌번호";
+"Request Amount" = "요청금액";
+
+"Reason for Rejection" = "거절한 이유";
+"View Grants Request Document" = "신탁재산 사용신청서 보기";
+"Delete Request" = "신청 취소하기";
+
+// Message
+"Photo." = "이미지";
+
+// Password Check
+"Password Check" = "비밀번호 입력";
+"Input Your Password." = "로그인 할 때 정한 비밀번호를 적어주세요.";
+
+// Signature
+"Signature" = "서명";
+"Rewrite" = "다시 서명하기";
+"Formally request the payment of a grant from the trust funds for the following reasons" = "내가 직접 신청하는 것인지 확인하기 위해 서명을 해요";
+
+// Add Edit Usage
+"Add/Edit Usage" = "사용 할 곳 추가하기";
+
+"Please fill all empty field" = "모든 정보를 입력해주세요";
+"Password is not the same" = "비밀번호가 일치하지 않습니다";
+"The email entered is not valid" = "유효하지 않은 이메일입니다";
+"Phone Number must between 10 - 13 digits" = "휴대폰번호는10 - 13";
+
+// Login
+"Remember ID" = "아이디 저장";
+"Login" = "로그인";
+"Recover ID" = "아이디 찾기";
+"Replace Password" = "비밀번호 변경";
+"Sign Up" = "회원가입";
+"ID" = "ID";
+"Password" = "비밀번호";
+"Logged In" = "로그인";
+
+"Must begin with 0" = "로 시작해야 함 0";
+"Enter the mobile number you entered when signing up" = "'나'의 휴대폰 번호를 적어주세요";
+"Mobile Number" = "휴대폰 번호";
+"Send Verification Number" = "인증번호 받기";
+"Enter the verification code you received" = "문자로 받은 인증번호를 적어주세요";
+"Enter Verification Code" = "인증번호 입력";
+"Enter your ID" = "'나'의 아이디 적어주세요";
+"Enter Verification Code" = "인증번호 입력";
+
+// Recover ID
+"Your ID is " = "고객님의 아이디는 ";
+"Return To Login" = "로그인하러 가기";
+
+// Replace Password
+"New Password" = "새 비밀번호";
+"Enter New Password" = "새로운 비밀번호를 입력해주세요";
+"Confirm Password" = "비밀번호를 한번 더 적어주세요.";
+"Confirm & Return To Login" = "변경 후 로그인하기";
+
+// Sign Up Strings
+"Thank you for visiting our trust fund and decision making support center. Please click on the type of user you want to signup as" = "신탁 의사 결정 지원센터를 찾아주셔서 감사합니다.
+나는 누구인가요?";
+"User" = "이용자";
+"Volunteer" = "지원자";
+"Support Agency" = "지원기관";
+
+"Phone number begins with 0" = "전화번호는 0로 시작합니다.";
+"OTP Sent" = "OTP 전송";
+"Please agree on the user agreements" = "이용약관에 먼저 동의해주세요 \n*이용약관이란?\n어플을 사용하기 위해 신탁센터와 내가 하는 약속이에요";
+
+"Agree All" = "전체동의 (모두 동의해요)";
+"Required Agreement" = "필수 동의항목 (꼭 동의해야 해요.)";
+"User signup agreement" = "신탁의사결정 지원센터 회원 약관동의";
+"Private data collection agreement" = "개인정보 수집 및 이용 동의";
+"Optional Agreements" = "선택 동의항목 (선택할 수 있어요)";
+"Notification push agreement" = "푸시알람 동의 *중요한 내용을 알려줘요";
+"Please_Verify_Email_First" = "아이디를 인증해주세요";
+"Next" = "다음으로";
+"Verify" = "확인하기";
+"Verifying" = "확인중";
+"Input id and password" = "회원정보를 입력해주세요 \n*비밀번호는 6자리 이상이에요";
+"Input user information" = "이용자님 회원정보를 입력해주세요";
+"Input volunteer information" = "지원자님 회원정보를 입력해주세요";
+"Input support agent information" = "지원기관님 회원정보를 입력해주세요";
+"Name" = "이름";
+"Birthdate" = "생년월일";
+"yyyy/mm/dd" = "yyyy/mm/dd";
+"Contact Number" = "휴대폰 번호";
+"Job Title" = "직책";
+"Registering" = "등록";
+
+// Transaction
+"My Users Account Info" = "나의 이용자 계좌 조회";
+"Today" = "당일";
+"1 Week" = "1 주일";
+"1 Month" = "1 개월";
+"6 Months" = "6 개월";
+"Search" = "조건 검색";
+"Newest" = "최신순";
+"Oldest" = "오래된순";
+"Desired Date" = "달력으로 선택";
+
+// My Page
+"Check My Documents" = "나의 계약 확인하기";
+"User Information" = "나의 정보";
+
+// Check my documents
+"View Contacts" = "계약서 확인하기";
+"View Support Plan" = "서비스 이용계획서 확인하기";
+"View User Agreement" = "정보 제공 동의현황 확인하기";
+"View Manager Information" = "나의 담당자 정보";
+"View Volunteer Information" = "나의 지원자 정보";
+
+//User Information
+"Contact Info." = "휴대폰 번호";
+"Account Info." = "계좌정보";
+"Contract Period" = "계약기간";
+"Contract Period:" = "계약기간:";
+"Notification Setting" = "알림 설정";
+"Message Alerts" = "채팅 알림";
+"Request Alerts" = "사용신청서 관련 알림";
+"Informative Alerts" = "중요한 정보 알림";
+"Logout" = "로그아웃";
+"You have been logged out" = "로그아웃 되었습니다.";
+"Will you log out?" = "로그아웃 하시겠습니까?";
+"Change Password" = "비밀번호 변경";
+"Terminate Account" = "회원 탈퇴";
+"Terminate" = "탈퇴하기";
+"Terminate the account?" = "정말 탈퇴하시겠습니까?";
+"Enter your password" = "비밀번호를 입력해주세요";
+
+
+
+"Message" = "채팅하기";
+"Call" = "전화하기";
+
+"My Manager Info." = "나의 담당자 정보";
+"My Volunteer Info." = "나의 지원자 정보";
+"back" = "뒤로";
+"New" = "NEW";

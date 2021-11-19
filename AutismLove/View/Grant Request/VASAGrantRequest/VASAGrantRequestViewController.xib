@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VASAGrantRequestViewController" customModule="AutismLove" customModuleProvider="target">
+            <connections>
+                <outlet property="loadMoreIndicator" destination="rQ0-yP-C5t" id="TD5-ag-kOM"/>
+                <outlet property="tableView" destination="NgJ-SI-zgB" id="QQb-7h-j4T"/>
+                <outlet property="userGrantRequestListLabel" destination="IA7-rG-F8W" id="PVc-pm-oVl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NgJ-SI-zgB">
+                    <rect key="frame" x="0.0" y="105" width="414" height="757"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" id="rQ0-yP-C5t">
+                        <rect key="frame" x="0.0" y="828.00000104037201" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users Grants Request List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA7-rG-F8W">
+                    <rect key="frame" x="24" y="60" width="366" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NgJ-SI-zgB" secondAttribute="bottom" id="8g4-Bg-D8M"/>
+                <constraint firstItem="NgJ-SI-zgB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Omq-V9-iip"/>
+                <constraint firstItem="NgJ-SI-zgB" firstAttribute="top" secondItem="IA7-rG-F8W" secondAttribute="bottom" constant="16" id="ZEH-Ng-EJs"/>
+                <constraint firstItem="IA7-rG-F8W" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="gcn-Id-ZJK"/>
+                <constraint firstItem="IA7-rG-F8W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="idm-Mk-HP1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NgJ-SI-zgB" secondAttribute="trailing" id="ruz-0u-esg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IA7-rG-F8W" secondAttribute="trailing" constant="24" id="uaM-zW-Az4"/>
+            </constraints>
+            <point key="canvasLocation" x="13.043478260869566" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
